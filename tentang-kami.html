@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="yoseke, aksesoris, merchandise" />
+    <title>Y O S E K E</title>
+    <!-- CSS File -->
+    <link
+      rel="stylesheet"
+      href="assets/libs/bootstrap/dist/css/bootstrap.css"
+    />
+    <link href="dist/css/style.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/custom.css" />
+  </head>
+  <body>
+    <section>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light primary-color fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand title-nav" href="index.html">YOSEKE</a>
+          <button
+            class="navbar-toggler white-color"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link text-nav mx-2" href="layanan.html"
+                  >Layanan</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-nav mx-2 active"
+                  href="tentang-kami.html"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-nav mx-2" href="hubungi-kami.html"
+                  >Hubungi Kami</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-nav nav-link text-nav ms-3"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login"
+                  >Masuk / Daftar</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+      <!-- Modal Log & Sign In -->
+      <div class="modal fade" tabindex="-1" id="login">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0">
+            <div class="modal-header btn-tabs border-0 p-0">
+              <ul class="nav w-100 text-center">
+                <li class="masuk-item nav-item w-50 active-item">
+                  <a class="nav-link" id="masuk">Masuk</a>
+                </li>
+                <li class="daftar-item nav-item w-50 off-item">
+                  <a class="nav-link" id="daftar">Daftar</a>
+                </li>
+              </ul>
+            </div>
+            <!-- masuk content -->
+            <section class="login-section">
+              <form action="">
+                <div class="modal-body">
+                  <div class="p-2">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Ketik Email"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Ketik Password"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="p-2 w-100">
+                    <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kembali</button> -->
+                    <button type="button" class="btn btn-nav px-4 w-100">
+                      Login
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </section>
+            <!-- masuk content end -->
+            <!-- daftar content -->
+            <section class="daftar-section hide-item">
+              <div class="modal-body">
+                <div class="p-2">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Nama</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Ketik Nama Lengkap"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Username</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Ketik Username"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Ketik Email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Ketik Password"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >No Telp</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Ketik No Telp"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="p-2 w-100">
+                  <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kembali</button> -->
+                  <button type="button" class="btn btn-nav w-100 px-4">
+                    Daftar Akun Sekarang !
+                  </button>
+                </div>
+              </div>
+            </section>
+            <!-- daftar content end -->
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Log & Sign In -->
+      <!-- Content -->
+      <section class="section-space mb-0">
+        <div class="container">
+          <h1 class="text-center">Siapa Kami</h1>
+          <p class="text-center">
+            <b>YOSEKE</b> adalah perusahaan yang bergerak di industri teknologi.
+            Dengan memberdayakan teknologi yang andal, <b>YOSEKE</b> dapat
+            memberikan solusi yang sesuai terhadap kebutuhan klien.
+          </p>
+        </div>
+        <div class="tk-content py-5">
+          <div class="container my-2">
+            <h1 class="text-center">Kenapa Harus YOSEKE?</h1>
+            <p class="text-center">
+              Pemuktahiran teknologi adalah satu tantangan tersendiri bagi
+              pelaku bisnis. <br />
+              Pada umumnya,
+            </p>
+            <div class="card m-5 bg-transparent">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <div class="icon-tk">
+                    <span class="f-icon">
+                      <i class="fas fa-tasks"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <p class="card-text text-center">
+                      Pebisnis belum dapat mengetahui secara tepat akan
+                      kebutuhan dan pengolahan Aset digital Mereka.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card m-5 bg-transparent">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <div class="icon-tk">
+                    <span class="f-icon">
+                      <i class="fas fa-cogs"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <p class="card-text text-center">
+                      Ketidaksesuaian antara operasional dengan alur sistem yang
+                      telah dirancang.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-transparent m-5 border-0">
+              <div class="card-body">
+                <p class="card-text text-center">
+                  <b>YOSEKE</b> dengan tim yang berpengalaman dibidangnya hadir
+                  untuk memberikan <b>insight</b> lebih kepada klien kami,
+                  sehingga teknologi yang dibuat dapat diberdayakan dengan tepat
+                  guna dan memberikan nilai lebih untuk bisnis mereka.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-space">
+          <div class="container">
+            <div class="card bg-transparent border-0">
+              <div class="card-body">
+                <h1 class="text-center">Memberdayakan Aset Digital</h1>
+                <p class="card-text text-center">
+                  Sebagai Perusahaan IT, <b>YOSEKE</b> tidak hanya berhenti
+                  sampai dengan pengembangan teknologi. Namun,
+                  <b>YOSEKE</b> juga peduli terhadap kesejahteraan klien yang
+                  membuat kami juga menyediakan jasa Analisa Data. Hal ini
+                  dimaksud agar pebisnis dapat memperoleh insight lebih terhadap
+                  permasalahan mereka sehingga teknologi yang dibuat dapat lebih
+                  tepat guna.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Content End -->
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row border-bottom">
+            <div class="col-md-9 col-6">
+              <h1 class="footer-title">
+                YOSEKE <span>"memberdayakan aset digital anda"</span>
+              </h1>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="float-end">
+                <ul class="list-group list-group-horizontal footer-icon">
+                  <li class="list-group-item border-0 bg-transparent">
+                    <span class="f-icon">
+                      <i class="fab fa-facebook-f"></i>
+                    </span>
+                  </li>
+                  <li class="list-group-item border-0 bg-transparent">
+                    <span class="f-icon">
+                      <i class="fab fa-instagram"></i>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-light mt-4">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          YOSEKE
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </section>
+    <!-- Script JS -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/lpcustom.js"></script>
+    <script src="dist/js/custom.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="yoseke, aksesoris, merchandise" />
+    <title>Y O S E K E</title>
+    <!-- CSS File -->
+    <link
+      rel="stylesheet"
+      href="assets/libs/bootstrap/dist/css/bootstrap.css"
+    />
+    <link href="dist/css/style.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/custom.css" />
+  </head>
+  <body>
+    <section>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light primary-color fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand title-nav" href="index.html">YOSEKE</a>
+          <button
+            class="navbar-toggler white-color"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link text-nav mx-2 active" href="layanan.html"
+                  >Layanan</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-nav mx-2" href="tentang-kami.html"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-nav mx-2" href="hubungi-kami.html"
+                  >Hubungi Kami</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-nav nav-link text-nav ms-3"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login"
+                  >Masuk / Daftar</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+      <!-- Modal Log & Sign In -->
+      <div class="modal fade" tabindex="-1" id="login">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0">
+            <div class="modal-header btn-tabs border-0 p-0">
+              <ul class="nav w-100 text-center">
+                <li class="masuk-item nav-item w-50 active-item">
+                  <a class="nav-link" id="masuk">Masuk</a>
+                </li>
+                <li class="daftar-item nav-item w-50 off-item">
+                  <a class="nav-link" id="daftar">Daftar</a>
+                </li>
+              </ul>
+            </div>
+            <!-- masuk content -->
+            <section class="login-section">
+              <form action="">
+                <div class="modal-body">
+                  <div class="p-2">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Ketik Email"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Ketik Password"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="p-2 w-100">
+                    <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kembali</button> -->
+                    <button type="button" class="btn btn-nav px-4 w-100">
+                      Login
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </section>
+            <!-- masuk content end -->
+            <!-- daftar content -->
+            <section class="daftar-section hide-item">
+              <div class="modal-body">
+                <div class="p-2">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Nama</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Ketik Nama Lengkap"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Username</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Ketik Username"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Ketik Email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Ketik Password"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >No Telp</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Ketik No Telp"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="p-2 w-100">
+                  <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kembali</button> -->
+                  <button type="button" class="btn btn-nav w-100 px-4">
+                    Daftar Akun Sekarang !
+                  </button>
+                </div>
+              </div>
+            </section>
+            <!-- daftar content end -->
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Log & Sign In -->
+      <!-- Modal layanan -->
+      <div class="modal fade" tabindex="-1" id="layanan">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center">Detail Layanan</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="p-2">
+                <div class="mb-3">
+                  <label class="form-label">Nama Layanan</label>
+                  <p class="text-500">Entri dan Transkripsi Data</p>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Harga</label>
+                  <p class="text-500">Rp 500.000 - Rp 1.000.000</p>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Deskripsi</label>
+                  <p class="text-500">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Kategori</label>
+                  <ul>
+                    <li class="text-500">Analisa</li>
+                    <li class="text-500">Reserch</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="p-2 w-100">
+                <a type="button" class="btn btn-nav px-4 w-100"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Layanan -->
+      <!-- Content -->
+      <section class="section-space">
+        <div class="container">
+          <h1 class="my-5">Layanan Kami</h1>
+          <div class="row">
+            <div class="col-md-3 col-12">
+              <a
+                href="#"
+                class="box-item"
+                data-bs-toggle="modal"
+                data-bs-target="#layanan"
+              >
+                <div class="card produk-item primary-color">
+                  <div class="card-header bg-transparent">
+                    <div class="h-100">
+                      <div class="icon-produk">
+                        <span class="f-icon">
+                          <i class="fas fa-database"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title text-center">
+                      Entri dan Transkrip Data
+                    </h4>
+                    <p>Harga Mulai Rp 250.000,-</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-produk w-100">Details</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-12">
+              <a
+                href="#"
+                class="box-item"
+                data-bs-toggle="modal"
+                data-bs-target="#layanan"
+              >
+                <div class="card produk-item primary-color">
+                  <div class="card-header bg-transparent">
+                    <div class="h-100">
+                      <div class="icon-produk">
+                        <span class="f-icon">
+                          <i class="fas fa-database"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title text-center">
+                      Entri dan Transkrip Data
+                    </h4>
+                    <p>Harga Mulai Rp 250.000,-</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-produk w-100">Details</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-12">
+              <a
+                href="#"
+                class="box-item"
+                data-bs-toggle="modal"
+                data-bs-target="#layanan"
+              >
+                <div class="card produk-item primary-color">
+                  <div class="card-header bg-transparent">
+                    <div class="h-100">
+                      <div class="icon-produk">
+                        <span class="f-icon">
+                          <i class="fas fa-database"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title text-center">
+                      Entri dan Transkrip Data
+                    </h4>
+                    <p>Harga Mulai Rp 250.000,-</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-produk w-100">Details</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-12">
+              <a
+                href="#"
+                class="box-item"
+                data-bs-toggle="modal"
+                data-bs-target="#layanan"
+              >
+                <div class="card produk-item primary-color">
+                  <div class="card-header bg-transparent">
+                    <div class="h-100">
+                      <div class="icon-produk">
+                        <span class="f-icon">
+                          <i class="fas fa-database"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title text-center">
+                      Entri dan Transkrip Data
+                    </h4>
+                    <p>Harga Mulai Rp 250.000,-</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-produk w-100">Details</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-12">
+              <a
+                href="#"
+                class="box-item"
+                data-bs-toggle="modal"
+                data-bs-target="#layanan"
+              >
+                <div class="card produk-item primary-color">
+                  <div class="card-header bg-transparent">
+                    <div class="h-100">
+                      <div class="icon-produk">
+                        <span class="f-icon">
+                          <i class="fas fa-database"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title text-center">
+                      Entri dan Transkrip Data
+                    </h4>
+                    <p>Harga Mulai Rp 250.000,-</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-produk w-100">Details</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-12">
+              <a
+                href="#"
+                class="box-item"
+                data-bs-toggle="modal"
+                data-bs-target="#layanan"
+              >
+                <div class="card produk-item primary-color">
+                  <div class="card-header bg-transparent">
+                    <div class="h-100">
+                      <div class="icon-produk">
+                        <span class="f-icon">
+                          <i class="fas fa-database"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title text-center">
+                      Entri dan Transkrip Data
+                    </h4>
+                    <p>Harga Mulai Rp 250.000,-</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-produk w-100">Details</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-12">
+              <a
+                href="#"
+                class="box-item"
+                data-bs-toggle="modal"
+                data-bs-target="#layanan"
+              >
+                <div class="card produk-item primary-color">
+                  <div class="card-header bg-transparent">
+                    <div class="h-100">
+                      <div class="icon-produk">
+                        <span class="f-icon">
+                          <i class="fas fa-database"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title text-center">
+                      Entri dan Transkrip Data
+                    </h4>
+                    <p>Harga Mulai Rp 250.000,-</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-produk w-100">Details</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-12">
+              <a
+                href="#"
+                class="box-item"
+                data-bs-toggle="modal"
+                data-bs-target="#layanan"
+              >
+                <div class="card produk-item primary-color">
+                  <div class="card-header bg-transparent">
+                    <div class="h-100">
+                      <div class="icon-produk">
+                        <span class="f-icon">
+                          <i class="fas fa-database"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title text-center">
+                      Entri dan Transkrip Data
+                    </h4>
+                    <p>Harga Mulai Rp 250.000,-</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-produk w-100">Details</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Content End -->
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row border-bottom">
+            <div class="col-md-9 col-7">
+              <h1 class="footer-title">
+                YOSEKE <span>"memberdayakan aset digital anda"</span>
+              </h1>
+            </div>
+            <div class="col-md-3 col-5">
+              <div class="float-end">
+                <ul class="list-group list-group-horizontal footer-icon">
+                  <li class="list-group-item border-0 bg-transparent">
+                    <span class="f-icon">
+                      <i class="fab fa-facebook-f"></i>
+                    </span>
+                  </li>
+                  <li class="list-group-item border-0 bg-transparent">
+                    <span class="f-icon">
+                      <i class="fab fa-instagram"></i>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-light mt-4">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          YOSEKE
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </section>
+    <!-- Script JS -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/lpcustom.js"></script>
+    <script src="dist/js/custom.min.js"></script>
+  </body>
+</html>
